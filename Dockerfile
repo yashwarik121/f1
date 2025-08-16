@@ -1,7 +1,7 @@
 # Use the official Streamlit base image
 FROM python:3.11-slim
 
-# Install system dependencies, including Google Chrome
+# Install system dependencies, including Chrome
 RUN apt-get update && apt-get install -y \
     apt-transport-https \
     ca-certificates \
@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 COPY . /app
 
-# Install Python dependencies from your requirements file
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port Streamlit runs on
