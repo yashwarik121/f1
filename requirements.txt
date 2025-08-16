@@ -3,3 +3,5 @@ fastf1
 pandas
 plotly
 reportlab
+kaleido
+reportlab
